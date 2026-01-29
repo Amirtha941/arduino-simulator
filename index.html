@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minimal Arduino Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Toolbar -->
+  <div id="toolbar">
+    <button id="circuitViewBtn">Circuit View</button>
+    <button id="codeViewBtn">Code View</button>
+  </div>
+
+  <!-- Main Layout -->
+  <div id="main">
+
+    <!-- Left Component Palette -->
+    <div id="palette">
+      <h3>Components</h3>
+      <div class="component" data-type="arduino">Arduino Uno</div>
+      <div class="component" data-type="led">LED</div>
+      <div class="component" data-type="button">Push Button</div>
+    </div>
+
+    <div id="canvas">
+  <h3>Canvas</h3>
+
+  <div id="controls">
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+  </div>
+
+  <div id="componentsArea"></div>
+
+  <pre id="codeView" hidden></pre>
+</div>
+
+
+    </div>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
